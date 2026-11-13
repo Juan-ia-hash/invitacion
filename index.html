@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es-PE">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f9f2e7">
+  <title>Cena de Matrimonios</title>
+  <link rel="stylesheet" href="fuentes/fuentes.css">
+  <link rel="stylesheet" href="estilos.css">
+  <script src="registro.js" defer></script>
+</head>
+<body>
+  <main>
+    <article class="invitation" aria-labelledby="titulo">
+      <header class="cover">
+        <span class="sparkle" aria-hidden="true">✦</span>
+        <p class="opening">Tenemos una invitación especial para ustedes.</p>
+        <h1 id="titulo"><span>Cena de</span> Matrimonios</h1>
+      </header>
+
+      <div class="details">
+        <p class="description reveal">Un día preparado de parte de Dios para todas las parejas casadas, convivientes y jóvenes con propuesta de matrimonio.</p>
+        <div class="date reveal">
+          <span class="day" id="dia">DOMINGO</span>
+          <div class="calendar">
+            <span class="number" id="numero">22</span>
+            <span id="mes">NOVIEMBRE</span>
+          </div>
+          <span class="time">A LAS <span id="hora">06:00PM</span></span>
+        </div>
+        <div class="venue reveal">
+          <p>Iglesia de Dios de Perú Templo Belén,<br>calle las Delicias, Zapallal - Pte. Piedra.</p>
+          <p class="contact">Confirmar Asistencia al: <a id="whatsapp" href="https://wa.me/51927032236">927 032 236</a></p>
+        </div>
+        <div class="closing reveal">
+          <p class="farewell">¡Te esperamos!</p>
+          <p class="price">Costo por pareja S/.30</p>
+          <a class="button" href="#registro">Registrar pareja</a>
+        </div>
+      </div>
+    </article>
+
+    <section class="registration reveal" aria-labelledby="registro">
+      <h2 id="registro" tabindex="-1">Registro de pareja</h2>
+      <form id="formulario" novalidate>
+        <fieldset disabled>
+          <div class="field">
+            <label for="primera">Nombre completo de la primera persona</label>
+            <input id="primera" name="primera" type="text" required autocomplete="section-primera name" aria-describedby="error-primera">
+            <p class="error" id="error-primera" aria-live="polite"></p>
+          </div>
+          <div class="field">
+            <label for="segunda">Nombre completo de la segunda persona</label>
+            <input id="segunda" name="segunda" type="text" required autocomplete="section-segunda name" aria-describedby="error-segunda">
+            <p class="error" id="error-segunda" aria-live="polite"></p>
+          </div>
+          <button class="button" type="submit">Continuar en WhatsApp</button>
+        </fieldset>
+        <p class="instructions">WhatsApp se abrirá con el mensaje listo. Toca Enviar en el chat para confirmar tu asistencia</p>
+      </form>
+      <noscript><p>Para confirmar tu asistencia, usa el enlace de WhatsApp de la invitación.</p></noscript>
+    </section>
+  </main>
+</body>
+</html>
+
